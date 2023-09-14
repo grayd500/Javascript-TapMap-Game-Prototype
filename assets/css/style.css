@@ -11,3 +11,12 @@ h6 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
 }
+#game-wrapper {
+  position: relative;  /* Makes this div a point of reference for absolute-positioned child elements */
+  #game-wrapper {
+    position: relative;  /* Makes this div a point of reference for absolute-positioned child elements */
+    width: 100%;  /* You can set this to whatever width you want */
+    height: auto;  /* Adjust this as needed */
+    overflow: hidden;  /* Keeps child elements from spilling out */
+  }
+}

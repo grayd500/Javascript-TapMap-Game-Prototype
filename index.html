@@ -5,10 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brewery Search</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/jass.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto+Condensed:300,300italic" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/jass.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/game.css" />
 </head>
 
 <body>
@@ -38,6 +41,26 @@
     </div>
   </div>
 
-<script src="./script.js"></script></body>
-
+  <div id="game-wrapper">
+    <p class="helper tap">Hover over the tap to fill the mug</p>
+    <h1>Fill the mug <span id="target">0</span>%</h1>
+    <h2 id="percent-filled"></h2>
+    <h3 id="result"></h3>
+    <div id="tap-container">
+      <div id="tap"></div>
+      <div id="handle"></div>
+      <div id="pour"></div>
+    </div>
+  
+    <div id="mug-container">
+      <div id="mug">
+        <div id="beer"></div>
+      </div>
+    </div>
+  
+    <p class="helper mug">Click the mug to reset</p>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
 </html>
