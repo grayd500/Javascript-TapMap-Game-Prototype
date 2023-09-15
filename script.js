@@ -101,16 +101,14 @@ var reshoot = document.getElementById("reshoot");
 var ball = document.getElementById("ball");
 var shooter = document.getElementById("shooter");
 var cupsOut = [];
-
 document.addEventListener("click", shootY);
-
 function shootY(){
     document.removeEventListener("click", shootY); 
     var top = window.getComputedStyle(ball).getPropertyValue("top");
     ball.classList.remove("shootY");
     ball.classList.add("shootX");
     ball.style.top = top;
-    document.documentElement.setAttribute("onclick", "shootX('top')");
+  document.getElementById("html").setAttribute("onclick","shootX('top')");
     var shootYstr = "shootX('";
     var shootYstr1 = top.toString();
     var shootYstr2 = "')";

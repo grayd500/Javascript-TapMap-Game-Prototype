@@ -1,3 +1,20 @@
+@keyframes initialY {
+    0% {
+      top: var(--top);
+    }
+    50% {
+      top: var(--top325);
+    }
+    100% {
+      top: var(--top);
+    }
+  }
+
+  #game-wrapper .initialY {
+    animation: initialY 1s infinite linear;
+}
+
+
 #game-wrapper :root{
     --top:0px;
     --top325:325px;
