@@ -1006,6 +1006,7 @@ a:hover {
   width: 100%;
   display: block;
   text-align: center;
+  margin-bottom: 25px
 }
 
 .btn.btn-primary {
